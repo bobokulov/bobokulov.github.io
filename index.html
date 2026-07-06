@@ -3,39 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mirzokhid Bobokulov</title>
-  <meta name="description" content="Official website of Mirzokhid Bobokulov – German Teacher, telc Examiner and Migration & Career Coach in Germany." />
+  <title>Mirzokhid Bobokulov | Official Website</title>
+  <meta name="description" content="Official website of Mirzokhid Bobokulov — German Teacher, telc Examiner and Migration & Career Coach in Germany." />
   <style>
-    :root{--bg:#f6f7fb;--card:#fff;--text:#111827;--muted:#6b7280;--dark:#111827;--line:#e5e7eb}
-    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#fff 0%,var(--bg) 100%);color:var(--text)}
-    .wrap{max-width:920px;margin:0 auto;padding:36px 18px 28px}.hero{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:46px 24px;text-align:center;box-shadow:0 20px 60px rgba(17,24,39,.08)}
-    .badge{display:inline-block;padding:8px 14px;border-radius:999px;background:#f3f4f6;color:#374151;font-size:14px;margin-bottom:18px}h1{font-size:clamp(34px,7vw,64px);line-height:1;margin:0 0 14px}.subtitle{font-size:20px;color:#374151;margin:0 0 10px}.claim{color:var(--muted);font-size:17px;margin:0 auto 28px;max-width:560px;line-height:1.6}
-    .links{display:grid;gap:12px;max-width:430px;margin:0 auto}.links a{display:block;padding:16px 18px;border-radius:16px;background:var(--dark);color:#fff;text-decoration:none;font-weight:700;transition:.2s}.links a:hover{transform:translateY(-2px);opacity:.92}.links a.light{background:#fff;color:var(--dark);border:1px solid var(--line)}
-    .section{margin-top:22px;background:rgba(255,255,255,.75);border:1px solid var(--line);border-radius:22px;padding:24px;line-height:1.7}.section h2{margin:0 0 10px;font-size:22px}.section p{margin:0;color:#4b5563}.footer{text-align:center;margin-top:24px;color:var(--muted);font-size:14px}.footer a{color:#374151;margin:0 8px;text-decoration:none}.footer a:hover{text-decoration:underline}
+    :root{--bg:#f6f7fb;--card:#ffffff;--text:#0f172a;--muted:#64748b;--dark:#111827;--line:#e5e7eb;--accent:#2563eb;--soft:#eef4ff}
+    *{box-sizing:border-box} body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:radial-gradient(circle at top,#eef4ff 0,#f8fafc 45%,#fff 100%);color:var(--text)}
+    .wrap{max-width:1080px;margin:0 auto;padding:28px 18px 46px}.nav{display:flex;justify-content:space-between;align-items:center;margin-bottom:28px}.brand{font-weight:800;letter-spacing:-.02em}.nav a{color:var(--text);text-decoration:none;margin-left:18px;font-size:14px}.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center;background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:34px;padding:46px;box-shadow:0 30px 80px rgba(15,23,42,.10)}
+    .badge{display:inline-flex;gap:8px;align-items:center;background:var(--soft);color:#1d4ed8;border:1px solid #dbeafe;padding:8px 14px;border-radius:999px;font-size:14px;font-weight:700}.hero h1{font-size:64px;line-height:.98;margin:22px 0 14px;letter-spacing:-.06em}.subtitle{font-size:22px;margin:0 0 12px;color:#1f2937}.lead{font-size:18px;line-height:1.7;color:var(--muted);max-width:640px}.buttons{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:28px;max-width:560px}.btn{display:flex;align-items:center;justify-content:center;gap:9px;text-decoration:none;padding:16px 18px;border-radius:16px;font-weight:800;border:1px solid var(--line);background:#fff;color:var(--text);transition:.18s}.btn.primary{background:var(--dark);color:#fff;border-color:var(--dark)}.btn:hover{transform:translateY(-2px);box-shadow:0 16px 30px rgba(15,23,42,.12)}
+    .profile{background:linear-gradient(160deg,#111827,#1e3a8a);border-radius:30px;min-height:420px;padding:28px;color:white;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative}.profile:before{content:"";position:absolute;inset:-80px -80px auto auto;width:220px;height:220px;background:rgba(255,255,255,.14);border-radius:50%}.avatar{width:148px;height:148px;border-radius:50%;background:rgba(255,255,255,.18);border:3px solid rgba(255,255,255,.45);display:grid;place-items:center;font-size:58px;font-weight:900}.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.stat{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);border-radius:18px;padding:16px}.stat b{display:block;font-size:24px}.stat span{font-size:13px;opacity:.8}.section{margin-top:24px;background:rgba(255,255,255,.86);border:1px solid var(--line);border-radius:28px;padding:30px}.section h2{margin:0 0 12px;font-size:28px}.section p{line-height:1.75;color:#334155;font-size:16px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:18px}.card{border:1px solid var(--line);border-radius:22px;padding:22px;background:#fff}.card h3{margin:0 0 8px}.footer{text-align:center;color:var(--muted);font-size:14px;margin-top:28px}.footer a{color:var(--text);text-decoration:none;margin:0 10px}
+    @media(max-width:850px){.hero{grid-template-columns:1fr;padding:30px}.hero h1{font-size:46px}.buttons{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.nav{display:block}.nav div:last-child{margin-top:14px}.nav a{margin:0 14px 0 0}.profile{min-height:330px}}
   </style>
 </head>
 <body>
   <main class="wrap">
+    <nav class="nav">
+      <div class="brand">Mirzokhid Bobokulov</div>
+      <div><a href="#about">About</a><a href="#services">Services</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+    </nav>
     <section class="hero">
-      <div class="badge">Official Website</div>
-      <h1>Mirzokhid Bobokulov</h1>
-      <p class="subtitle">German Teacher · telc Examiner · Migration & Career Coach</p>
-      <p class="claim">Helping people build their future in Germany.</p>
-      <div class="links">
-        <a href="https://www.youtube.com/@mirzo_in_germany" target="_blank" rel="noopener">YouTube</a>
-        <a href="https://www.instagram.com/mirzokhid.bobokulov/" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://www.facebook.com/profile.php?id=100007297997947" target="_blank" rel="noopener">Facebook</a>
-        <a class="light" href="mailto:mirzo.uz95@mail.ru">Kontakt per E-Mail</a>
+      <div>
+        <span class="badge">Official Website</span>
+        <h1>Mirzokhid Bobokulov</h1>
+        <p class="subtitle">German Teacher · telc Examiner · Migration & Career Coach</p>
+        <p class="lead">Helping people build their future in Germany through language, career guidance and practical migration-oriented content.</p>
+        <div class="buttons">
+          <a class="btn primary" href="https://www.youtube.com/@mirzo_in_germany" target="_blank">YouTube</a>
+          <a class="btn primary" href="https://www.instagram.com/mirzokhid.bobokulov/" target="_blank">Instagram</a>
+          <a class="btn" href="https://www.facebook.com/profile.php?id=100007297997947" target="_blank">Facebook</a>
+          <a class="btn" href="mailto:mirzo.uz95@mail.ru">Kontakt per E-Mail</a>
+        </div>
       </div>
+      <aside class="profile">
+        <div class="avatar">MB</div>
+        <div>
+          <h2 style="margin:0 0 10px">Germany-based creator & educator</h2>
+          <div class="stats"><div class="stat"><b>DE</b><span>Based in Germany</span></div><div class="stat"><b>telc</b><span>Examiner</span></div><div class="stat"><b>DaF</b><span>German Teacher</span></div><div class="stat"><b>Coach</b><span>Migration & Career</span></div></div>
+        </div>
+      </aside>
     </section>
-    <section class="section">
+    <section class="section" id="about">
       <h2>About</h2>
-      <p>Mirzokhid Bobokulov is a Germany-based German teacher, telc examiner and migration & career coach. This website provides official contact information and legal notices for his online presence.</p>
+      <p>Mirzokhid Bobokulov is a Germany-based German teacher, telc examiner and migration & career coach. This official website provides verified contact information, social media links and legal notices for his online presence.</p>
     </section>
-    <footer class="footer">
-      <a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a><br><br>
-      © 2026 Mirzokhid Bobokulov
-    </footer>
+    <section class="section" id="services">
+      <h2>Focus Areas</h2>
+      <div class="cards"><div class="card"><h3>German Language</h3><p>Content and guidance for German learners, exam preparation and language development.</p></div><div class="card"><h3>telc Exams</h3><p>Professional experience with telc examination formats and preparation topics.</p></div><div class="card"><h3>Career in Germany</h3><p>Practical information about study, work, migration and career pathways in Germany.</p></div></div>
+    </section>
+    <footer class="footer"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a><p>© 2026 Mirzokhid Bobokulov</p></footer>
   </main>
 </body>
 </html>
