@@ -3,92 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Offizielle Website von Mirzokhid Bobokulov – Deutschlehrer, telc Prüfer sowie Migrations- und Karriereberater in Deutschland." />
-  <title>Mirzokhid Bobokulov | Offizielle Website</title>
+  <title>Mirzokhid Bobokulov – Deutschlehrer & telc-Prüfer</title>
+  <meta name="description" content="Offizielle Webseite von Mirzokhid Bobokulov – Deutschlehrer, telc-Prüfer sowie Migrations- und Karriereberater in Deutschland." />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html">Mirzokhid Bobokulov</a>
+    <a class="brand" href="index.html"><span class="logo">MB</span><span class="flag"></span><span>Mirzokhid Bobokulov</span></a>
     <nav class="nav">
+      <a href="index.html" class="active">Startseite</a>
       <a href="#ueber-mich">Über mich</a>
-      <a href="#schwerpunkte">Schwerpunkte</a>
+      <a href="#leistungen">Leistungen</a>
       <a href="kontakt.html">Kontakt</a>
-      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Design wechseln">☾</button>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
     </nav>
+    <button class="theme-toggle" id="themeToggle" aria-label="Design umschalten">☼</button>
   </header>
 
   <main>
     <section class="hero">
+      <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="badge">Offizielle Website</span>
-        <h1>Mirzokhid Bobokulov</h1>
-        <p class="subtitle">Deutschlehrer · telc Prüfer · Migrations- & Karriereberater</p>
-        <p class="hero-text">Ich begleite Menschen auf ihrem Weg nach Deutschland – mit Sprache, Orientierung und praxisnaher Beratung.</p>
-        <div class="actions">
-          <a class="btn primary" href="kontakt.html">Kontakt aufnehmen</a>
-          <a class="btn secondary" href="#schwerpunkte">Mehr erfahren</a>
+        <div class="hero-text reveal">
+          <p class="eyebrow">Deutsch lernen. Zukunft gestalten.</p>
+          <h1>Mirzokhid<br>Bobokulov</h1>
+          <h2>Deutschlehrer · telc-Prüfer · Migrations- & Karriereberater</h2>
+          <p class="lead">Ich unterstütze Menschen auf ihrem Weg nach Deutschland – mit Sprachunterricht, telc-Prüfungsvorbereitung sowie Beratung zu Migration und Karriere.</p>
+          <div class="hero-actions">
+            <a class="btn btn-youtube" href="https://www.youtube.com/@mirzo_in_germany" target="_blank" rel="noopener">▶ YouTube <small>100K+ Community</small></a>
+            <a class="btn btn-instagram" href="https://www.instagram.com/mirzokhid.bobokulov/" target="_blank" rel="noopener">◎ Instagram <small>Folgen</small></a>
+            <a class="btn btn-facebook" href="https://www.facebook.com/profile.php?id=100007297997947" target="_blank" rel="noopener">f Facebook <small>Verbinden</small></a>
+            <a class="btn btn-contact" href="kontakt.html">✉ Kontakt <small>Nachricht senden</small></a>
+          </div>
+        </div>
+        <div class="hero-image reveal">
+          <div class="portrait-ring">
+            <img src="assets/profile.png" alt="Mirzokhid Bobokulov" />
+          </div>
         </div>
       </div>
-      <div class="hero-image-wrap">
-        <img src="images/profile.jpg" alt="Portrait von Mirzokhid Bobokulov" class="hero-image" />
+    </section>
+
+    <section class="stats card reveal" aria-label="Kennzahlen">
+      <div><span>100K+</span><p>YouTube Abonnenten</p><small>Bildung & Motivation</small></div>
+      <div><span>8+ Jahre</span><p>Erfahrung in Deutschland</p><small>Unterrichten & Beraten</small></div>
+      <div><span>1000+</span><p>Schüler & Klienten</p><small>Erfolgreich begleitet</small></div>
+      <div><span>telc</span><p>Zertifizierter Prüfer</p><small>B1 · B2 · C1 Hochschule</small></div>
+    </section>
+
+    <section id="ueber-mich" class="section split">
+      <div class="reveal">
+        <p class="section-kicker">Über mich</p>
+        <h2>Bildung. Sprache. Perspektiven.</h2>
+        <p>Ich bin Deutschlehrer, telc-Prüfer und Migrations- & Karriereberater mit langjähriger Erfahrung in Sprachvermittlung, Prüfungsvorbereitung und individueller Beratung.</p>
+        <p>Meine Arbeit verbindet Deutschunterricht, praxisnahe Orientierung und verständliche Informationen für Menschen, die sich in Deutschland sprachlich, beruflich und persönlich weiterentwickeln möchten.</p>
       </div>
-    </section>
-
-    <section class="social-card" aria-label="Social Media Links">
-      <a href="https://www.youtube.com/@mirzo_in_germany" target="_blank" rel="noopener">YouTube</a>
-      <a href="https://www.instagram.com/mirzokhid.bobokulov/" target="_blank" rel="noopener">Instagram</a>
-      <a href="https://www.facebook.com/profile.php?id=100007297997947" target="_blank" rel="noopener">Facebook</a>
-      <a href="kontakt.html">Kontaktformular</a>
-    </section>
-
-    <section class="stats">
-      <div><strong>100K+</strong><span>YouTube Community</span></div>
-      <div><strong>8+</strong><span>Jahre in Deutschland</span></div>
-      <div><strong>telc</strong><span>Prüfungserfahrung</span></div>
-    </section>
-
-    <section id="ueber-mich" class="section card">
-      <p class="section-label">Über mich</p>
-      <h2>Sprache, Integration und berufliche Orientierung</h2>
-      <p>Ich bin Deutschlehrer in Deutschland und unterstütze Lernende sowie Interessierte bei Fragen rund um Deutschlernen, Prüfungen, Migration und berufliche Perspektiven in Deutschland. Mein Ziel ist es, komplexe Themen verständlich, ehrlich und praxisnah zu erklären.</p>
-    </section>
-
-    <section id="schwerpunkte" class="section">
-      <p class="section-label">Schwerpunkte</p>
-      <h2>Wobei ich unterstützen kann</h2>
-      <div class="grid">
-        <article class="feature">
-          <h3>Deutsch lernen</h3>
-          <p>Orientierung zu Deutschkursen, Lernstrategien und Prüfungsvorbereitung.</p>
+      <div class="feature-list reveal" id="leistungen">
+        <article>
+          <span>🎓</span>
+          <div><h3>Deutschunterricht</h3><p>Von A1 bis C1 – praxisnah, strukturiert und zielorientiert.</p></div>
         </article>
-        <article class="feature">
-          <h3>telc Prüfungen</h3>
-          <p>Informationen zu Prüfungsformaten, Vorbereitung und typischen Anforderungen.</p>
+        <article>
+          <span>📄</span>
+          <div><h3>telc-Prüfungsvorbereitung</h3><p>Professionelle Vorbereitung auf telc B1, B2 und C1 Hochschule.</p></div>
         </article>
-        <article class="feature">
-          <h3>Migration & Karriere</h3>
-          <p>Allgemeine Orientierung zu Ausbildung, Beruf, Sprache und Perspektiven in Deutschland.</p>
+        <article>
+          <span>🤝</span>
+          <div><h3>Migration & Karriereberatung</h3><p>Unterstützung bei Integration, Ausbildung, Jobsuche und Karriereplanung.</p></div>
         </article>
       </div>
     </section>
 
-    <section class="section cta">
-      <h2>Sie möchten Kontakt aufnehmen?</h2>
-      <p>Nutzen Sie bitte das Kontaktformular. Ich melde mich so bald wie möglich zurück.</p>
-      <a class="btn primary" href="kontakt.html">Zum Kontaktformular</a>
+    <section class="section cta reveal">
+      <p class="section-kicker">Kontakt</p>
+      <h2>Sie möchten mit mir zusammenarbeiten?</h2>
+      <p>Nutzen Sie das Kontaktformular für Anfragen, Kooperationen oder Beratungstermine.</p>
+      <a class="primary-link" href="kontakt.html">Kontaktformular öffnen →</a>
     </section>
   </main>
 
   <footer class="footer">
-    <div>
-      <a href="impressum.html">Impressum</a>
-      <span>·</span>
-      <a href="datenschutz.html">Datenschutz</a>
-    </div>
     <p>© 2026 Mirzokhid Bobokulov</p>
+    <div><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
   </footer>
-
   <script src="script.js"></script>
 </body>
 </html>
