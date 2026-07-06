@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kontaktformular von Mirzokhid Bobokulov." />
+  <title>Kontakt | Mirzokhid Bobokulov</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Mirzokhid Bobokulov</a>
+    <nav class="nav">
+      <a href="index.html#ueber-mich">Über mich</a>
+      <a href="index.html#schwerpunkte">Schwerpunkte</a>
+      <a href="kontakt.html">Kontakt</a>
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Design wechseln">☾</button>
+    </nav>
+  </header>
+
+  <main class="page">
+    <section class="page-card">
+      <span class="badge">Kontakt</span>
+      <h1>Kontakt aufnehmen</h1>
+      <p>Schreiben Sie mir Ihre Nachricht über das Formular. Die Anfrage wird über Formspree an mich weitergeleitet.</p>
+
+      <form class="contact-form" action="https://formspree.io/f/mdarjdrd" method="POST">
+        <label for="name">Name</label>
+        <input id="name" type="text" name="name" autocomplete="name" required />
+
+        <label for="email">E-Mail-Adresse</label>
+        <input id="email" type="email" name="email" autocomplete="email" required />
+
+        <label for="subject">Betreff</label>
+        <input id="subject" type="text" name="subject" />
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" name="message" rows="7" required></textarea>
+
+        <input type="hidden" name="_subject" value="Neue Nachricht über bobokulov.github.io" />
+        <button class="btn primary form-button" type="submit">Nachricht senden</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <a href="index.html">Startseite</a>
+      <span>·</span>
+      <a href="impressum.html">Impressum</a>
+      <span>·</span>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+    <p>© 2026 Mirzokhid Bobokulov</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
