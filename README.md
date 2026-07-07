@@ -1,15 +1,13 @@
-# Mirzokhid Bobokulov – Offizielle Website
+# Mirzokhid Bobokulov Website
 
-GitHub Pages-ready website.
+GitHub Pages ready files.
 
-## Upload
-Upload all files in this folder to the repository `bobokulov.github.io`.
-
-Required files:
+Upload:
 - index.html
+- hero-bg.png
+- README.md
+
+Keep your existing:
 - kontakt.html
 - impressum.html
 - datenschutz.html
-- style.css
-- script.js
-- profile.png
