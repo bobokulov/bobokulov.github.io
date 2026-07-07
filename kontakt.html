@@ -3,27 +3,321 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Kontakt zu Mirzokhid Bobokulov für Kooperationen, Beratung, Deutschunterricht und Social Media Anfragen." />
-  <title>Kontakt – Mirzokhid Bobokulov</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Kontakt | Mirzokhid Bobokulov</title>
+  <style>
+    :root{
+      --bg:#f4f6fb;
+      --card:#ffffff;
+      --text:#0f172a;
+      --muted:#64748b;
+      --dark:#111827;
+      --yellow:#facc15;
+      --red:#dc2626;
+      --border:#e5e7eb;
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(250,204,21,.18), transparent 35%),
+        radial-gradient(circle at top right, rgba(220,38,38,.12), transparent 35%),
+        var(--bg);
+      color:var(--text);
+    }
+
+    header{
+      background:rgba(17,24,39,.96);
+      color:white;
+      padding:18px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:sticky;
+      top:0;
+      z-index:10;
+      box-shadow:0 8px 30px rgba(0,0,0,.18);
+    }
+
+    .logo{
+      font-weight:800;
+      letter-spacing:.2px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:24px;
+      font-weight:700;
+      font-size:14px;
+      opacity:.9;
+    }
+
+    nav a:hover{color:var(--yellow)}
+
+    main{
+      min-height:calc(100vh - 160px);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:70px 20px;
+    }
+
+    .contact-card{
+      width:100%;
+      max-width:980px;
+      background:rgba(255,255,255,.92);
+      border:1px solid var(--border);
+      border-radius:32px;
+      overflow:hidden;
+      display:grid;
+      grid-template-columns:1fr 1.2fr;
+      box-shadow:0 30px 90px rgba(15,23,42,.15);
+    }
+
+    .info{
+      background:
+        linear-gradient(135deg, rgba(17,24,39,.96), rgba(15,23,42,.94)),
+        linear-gradient(135deg, var(--red), var(--yellow));
+      color:white;
+      padding:48px;
+      position:relative;
+    }
+
+    .badge{
+      display:inline-block;
+      color:var(--yellow);
+      font-weight:800;
+      font-size:13px;
+      letter-spacing:.08em;
+      text-transform:uppercase;
+      margin-bottom:18px;
+    }
+
+    .info h1{
+      font-size:42px;
+      line-height:1.05;
+      margin:0 0 18px;
+    }
+
+    .info p{
+      color:#d1d5db;
+      line-height:1.7;
+      margin:0 0 26px;
+    }
+
+    .info-box{
+      margin-top:28px;
+      padding:18px;
+      border-radius:18px;
+      background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.16);
+    }
+
+    .info-box strong{display:block;margin-bottom:6px}
+    .info-box a{color:white;text-decoration:none}
+    .info-box a:hover{color:var(--yellow)}
+
+    form{
+      padding:48px;
+      background:var(--card);
+    }
+
+    .row{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:18px;
+    }
+
+    label{
+      display:block;
+      font-weight:800;
+      font-size:14px;
+      margin-bottom:8px;
+    }
+
+    input, textarea{
+      width:100%;
+      padding:15px 16px;
+      border:1px solid var(--border);
+      border-radius:15px;
+      font-size:16px;
+      outline:none;
+      background:#f8fafc;
+      transition:.2s ease;
+      margin-bottom:20px;
+    }
+
+    input:focus, textarea:focus{
+      border-color:var(--yellow);
+      background:white;
+      box-shadow:0 0 0 4px rgba(250,204,21,.18);
+    }
+
+    textarea{
+      min-height:150px;
+      resize:vertical;
+    }
+
+    .notice{
+      font-size:13px;
+      line-height:1.6;
+      color:var(--muted);
+      margin:4px 0 22px;
+    }
+
+    button{
+      width:100%;
+      padding:17px 24px;
+      border:0;
+      border-radius:16px;
+      background:linear-gradient(135deg, var(--red), var(--yellow));
+      color:#111827;
+      font-size:16px;
+      font-weight:900;
+      cursor:pointer;
+      box-shadow:0 15px 35px rgba(220,38,38,.22);
+      transition:.25s ease;
+    }
+
+    button:hover{
+      transform:translateY(-2px);
+      box-shadow:0 20px 45px rgba(220,38,38,.28);
+    }
+
+    footer{
+      padding:28px 8%;
+      display:flex;
+      justify-content:space-between;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    footer a{
+      color:var(--muted);
+      text-decoration:none;
+      margin-left:18px;
+    }
+
+    footer a:hover{color:var(--text)}
+
+    @media(max-width:850px){
+      header{
+        padding:16px 22px;
+        display:block;
+      }
+
+      nav{
+        margin-top:14px;
+      }
+
+      nav a{
+        margin-left:0;
+        margin-right:16px;
+        display:inline-block;
+        margin-bottom:8px;
+      }
+
+      .contact-card{
+        grid-template-columns:1fr;
+        border-radius:24px;
+      }
+
+      .info, form{
+        padding:32px 24px;
+      }
+
+      .info h1{
+        font-size:34px;
+      }
+
+      .row{
+        grid-template-columns:1fr;
+        gap:0;
+      }
+
+      footer{
+        display:block;
+        text-align:center;
+      }
+
+      footer div:last-child{
+        margin-top:14px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <header class="site-header"><a class="brand" href="index.html"><span class="brand-mark">MB</span><span>Mirzokhid Bobokulov</span></a><nav class="nav"><a href="index.html#ueber-mich">Über mich</a><a href="index.html#leistungen">Leistungen</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></nav></header>
-  <main class="page">
-    <section class="page-card reveal visible">
-      <p class="section-kicker">Kontakt</p>
-      <h1>Kontakt aufnehmen</h1>
-      <p>Für Kooperationen, Bildungsprojekte, Beratungstermine oder allgemeine Anfragen können Sie mir über dieses Formular schreiben.</p>
-      <form class="form-grid" action="https://formspree.io/f/mdarjdrd" method="POST">
-        <label>Ihr Name<input type="text" name="name" required></label>
-        <label>Ihre E-Mail-Adresse<input type="email" name="email" required></label>
-        <label>Betreff<input type="text" name="subject"></label>
-        <label>Nachricht<textarea name="message" required></textarea></label>
-        <button class="btn primary" type="submit">Nachricht senden</button>
-        <p class="form-note">Mit dem Absenden erklären Sie sich damit einverstanden, dass Ihre Angaben zur Bearbeitung der Anfrage verarbeitet werden.</p>
+  <header>
+    <div class="logo">MB · Mirzokhid Bobokulov</div>
+    <nav>
+      <a href="index.html">Startseite</a>
+      <a href="index.html#leistungen">Leistungen</a>
+      <a href="kontakt.html">Kontakt</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-card">
+      <div class="info">
+        <span class="badge">Kontakt</span>
+        <h1>Kontakt aufnehmen</h1>
+        <p>
+          Für Kooperationen, Bildungsprojekte, Beratungsanfragen oder allgemeine Anliegen
+          können Sie mir gerne eine Nachricht senden.
+        </p>
+
+        <div class="info-box">
+          <strong>E-Mail</strong>
+          <a href="mailto:mirzo.uz95@mail.ru">mirzo.uz95@mail.ru</a>
+        </div>
+
+        <div class="info-box">
+          <strong>Hinweis</strong>
+          Ihre Nachricht wird über Formspree an mich übermittelt. Bitte geben Sie keine besonders sensiblen Daten ein.
+        </div>
+      </div>
+
+      <form action="https://formspree.io/f/mdarjdrd" method="POST">
+        <div class="row">
+          <div>
+            <label for="name">Ihr Name</label>
+            <input id="name" type="text" name="name" placeholder="Max Mustermann" required>
+          </div>
+          <div>
+            <label for="email">Ihre E-Mail-Adresse</label>
+            <input id="email" type="email" name="email" placeholder="name@example.com" required>
+          </div>
+        </div>
+
+        <label for="subject">Betreff</label>
+        <input id="subject" type="text" name="subject" placeholder="Worum geht es?">
+
+        <label for="message">Nachricht</label>
+        <textarea id="message" name="message" placeholder="Schreiben Sie Ihre Nachricht ..." required></textarea>
+
+        <p class="notice">
+          Mit dem Absenden erklären Sie sich damit einverstanden, dass Ihre Angaben zur Bearbeitung der Anfrage verarbeitet werden.
+        </p>
+
+        <input type="hidden" name="_subject" value="Neue Nachricht über bobokulov.github.io">
+        <button type="submit">Nachricht senden</button>
       </form>
     </section>
   </main>
-  <footer class="footer"><span>© 2026 Mirzokhid Bobokulov</span><div><a href="index.html">Startseite</a><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div></footer>
+
+  <footer>
+    <div>© 2026 Mirzokhid Bobokulov</div>
+    <div>
+      <a href="index.html">Startseite</a>
+      <a href="impressum.html">Impressum</a>
+      <a href="datenschutz.html">Datenschutz</a>
+    </div>
+  </footer>
 </body>
 </html>
