@@ -1,11 +1,15 @@
 # Mirzokhid Bobokulov – Offizielle Website
 
-GitHub Pages Website mit Startseite, Kontaktformular, Impressum und Datenschutzerklärung.
+GitHub Pages-ready website.
 
-## Dateien
+## Upload
+Upload all files in this folder to the repository `bobokulov.github.io`.
+
+Required files:
 - index.html
 - kontakt.html
 - impressum.html
 - datenschutz.html
 - style.css
+- script.js
 - profile.png
